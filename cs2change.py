@@ -23,7 +23,7 @@ def get_font_name(font_path):
     for record in font['name'].names:
         if record.nameID == 1 and record.platformID == 3:
             return record.toUnicode().strip()
-    raise ValueError("无法获取字体名称喵～")
+    raise ValueError("无法获取字体名称")
 
 def prompt_font_path():
     base = getattr(sys, '_MEIPASS', os.path.dirname(__file__))
@@ -31,14 +31,14 @@ def prompt_font_path():
     choice = input("请输入自定义字体文件路径（留空使用默认「星梦推荐」cs2.otf）：").strip().strip('"')
     if choice:
         return choice
-    print("✨ 使用内置默认字体 cs2.otf 喵～")
+    print("✨ 使用内置默认字体 cs2.otf")
     return default
 
 def prompt_install_path():
     while True:
         path = input("请输入 CS2 安装路径（以 Counter-Strike Global Offensive 结尾）：").strip().strip('"')
         if os.path.isdir(path) and path.endswith("Counter-Strike Global Offensive"):
-            print("✔️ 路径已确认，准备进行字体大冒险！")
+            print("✔️ 路径已确认")
             return path
         print("⚠️ 路径好像不对哦，请再试一次～ (｡•́︿•̀｡)")
 
@@ -63,7 +63,7 @@ def write_fonts_conf(dir_path, primary_name, fallback_name):
     tree = ET.ElementTree(root)
     out = os.path.join(dir_path, "fonts.conf")
     tree.write(out, encoding="utf-8", xml_declaration=True)
-    print(f"🎉 已生成 {os.path.basename(out)}（含中文备用），萌萌哒～")
+    print(f"🎉 已生成 {os.path.basename(out)}（含中文备用）")
 
 def write_global_conf(dir_path, font_name):
     root = ET.Element("fontconfig")
@@ -85,7 +85,7 @@ def verify(fonts_dir, font_name):
         return False, f"字体文件有问题：{ffile}"
     if not os.path.isfile(conf):
         return False, f"缺少配置文件：{conf}"
-    return True, "安装验证通过，字体大冒险圆满成功！ (•̀ᴗ•́)و ̑̑"
+    return True, "安装验证通过"
 
 def main():
     font_path = prompt_font_path()
