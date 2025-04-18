@@ -5,13 +5,6 @@ CS2 字体更换器 v1.0 —— 内置默认字体，免注册表探测
 By Star Dream Studio
 """
 
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-CS2 字体更换器 v1.0 
-By Star Dream Studio
-"""
-
 import os
 import sys
 import shutil
