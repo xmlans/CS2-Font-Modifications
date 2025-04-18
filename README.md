@@ -13,7 +13,7 @@ Custom software to modify CS2 global in-game fonts with built-in fonts.
 <br>
 This installer comes bundled with a default English font and a Chinese fallback font. You can also specify any custom font you want—just one click and it replaces your game UI font instantly! <br>
 <div align="center">
-  <h3><href="https://github.com/xmlans/CS2-Font-Modifications/releases/download/v/cs2change.exe">Download for Windows</href></h3>
+  <h3><a href="https://github.com/xmlans/CS2-Font-Modifications/releases/download/v/cs2change.exe">Download for Windows</a></h3>
 </div>
 <p align="center">
   <img src="demo.png" alt="Renderings" />
