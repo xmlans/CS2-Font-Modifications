@@ -1,11 +1,11 @@
 # CS2 Font Modifications
 Custom software to modify CS2 global in-game fonts with built-in fonts.
-<p align="center">
-  ![Platform Windows](https://img.shields.io/badge/Platform-Windows-pink)
-  ![Game Counter‑Strike 2](https://img.shields.io/badge/Game-Counter--Strike%202-pink)
-  ![License MIT](https://img.shields.io/badge/License-MIT-pink)
-  ![GitHub Stars](https://img.shields.io/github/stars/xmlans/CS2-Font-Modifications?style=social&color=ff69b4)
-</p>
+<div align="center">
+  <img src="https://img.shields.io/badge/Platform-Windows-pink" alt="Platform Windows" />
+  <img src="https://img.shields.io/badge/Game-Counter--Strike%202-pink" alt="Game Counter‑Strike 2" />
+  <img src="https://img.shields.io/badge/License-MIT-pink" alt="License MIT" />
+  <img src="https://img.shields.io/github/stars/xmlans/CS2-Font-Modifications?style=social&color=ff69b4" alt="GitHub Stars" />
+</div>
 
 ---
 
