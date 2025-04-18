@@ -8,16 +8,8 @@ By Star Dream Studio
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-CS2 字体更换器 v1.1 By Star Dream Studio
-✨ 二次元字体大冒险升级版，喵～ (≧▽≦)
-功能：可交互选择自定义字体，留空直接使用内置「星梦推荐」cs2.otf，
-并自动加入「cs2sc.ttf」作为中文备用字体！
-打包示例：
-    pyinstaller --onefile \
-      --add-data "cs2.otf;." \
-      --add-data "cs2sc.ttf;." \
-      --icon favicon.ico \
-      cs2change_v1_1.py
+CS2 字体更换器 v1.0 
+By Star Dream Studio
 """
 
 import os
@@ -34,7 +26,6 @@ def get_font_name(font_path):
     raise ValueError("无法获取字体名称喵～")
 
 def prompt_font_path():
-    """输入自定义字体，或回车使用默认内置字体 支持中英文"""
     base = getattr(sys, '_MEIPASS', os.path.dirname(__file__))
     default = os.path.join(base, 'cs2.otf')
     choice = input("请输入自定义字体文件路径（留空使用默认「星梦推荐」cs2.otf）：").strip().strip('"')
@@ -44,7 +35,6 @@ def prompt_font_path():
     return default
 
 def prompt_install_path():
-    """请输入 CS2 安装目录喵～"""
     while True:
         path = input("请输入 CS2 安装路径（以 Counter-Strike Global Offensive 结尾）：").strip().strip('"')
         if os.path.isdir(path) and path.endswith("Counter-Strike Global Offensive"):
