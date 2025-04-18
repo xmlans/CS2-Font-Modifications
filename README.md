@@ -1,4 +1,4 @@
-# CS2-Font-Modifications
+# CS2 Font Modifications
 Custom software to modify CS2 global in-game fonts with built-in fonts.
 ![Platform Windows](https://img.shields.io/badge/Platform-Windows-pink)
 ![Game Counter‑Strike 2](https://img.shields.io/badge/Game-Counter--Strike%202-pink)
@@ -7,4 +7,4 @@ Custom software to modify CS2 global in-game fonts with built-in fonts.
 
 ---
 
-[English](./README_EN.md) | [中文](./README.md)
+[English](./README.md) | [中文](./README_CN.md)
