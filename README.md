@@ -10,3 +10,8 @@ Custom software to modify CS2 global in-game fonts with built-in fonts.
 ---
 
 [English](./README.md) | [中文](./README_CN.md)
+<br>
+This installer comes bundled with a default English font and a Chinese fallback font. You can also specify any custom font you want—just one click and it replaces your game UI font instantly!
+<p align="center">
+  <img src="demo.png" alt="Renderings" />
+</p>
