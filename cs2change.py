@@ -31,9 +31,9 @@ def prompt_install_path():
     while True:
         path = input("请输入 CS2 安装路径（以 Counter-Strike Global Offensive 结尾）：").strip().strip('"')
         if os.path.isdir(path) and path.endswith("Counter-Strike Global Offensive"):
-            print("✔️ 路径已确认")
+            print("路径已确认")
             return path
-        print(" 路径好像不对哦，请再试一次～ (｡•́︿•̀｡)")
+        print(" 路径好像不对哦，请再试一次")
 
 def ensure_dirs(*paths):
     for p in paths:
@@ -44,7 +44,7 @@ def clear_old(fonts_dir):
         if f.lower().endswith(('.ttf', '.uifont')):
             try:
                 os.remove(os.path.join(fonts_dir, f))
-                print(f"🗑️ 已删除旧文件：{f}")
+                print(f"已删除旧文件：{f}")
             except Exception as e:
                 print(f" 删除失败 {f}: {e}")
 
@@ -87,7 +87,7 @@ def main():
 
     try:
         primary_name = get_font_name(font_path)
-        print(f"🌟 识别到主字体名称：{primary_name}")
+        print(f"识别到主字体名称：{primary_name}")
     except Exception as e:
         sys.exit(f"解析主字体失败：{e}")
 
@@ -97,7 +97,7 @@ def main():
         sys.exit(f"找不到中文备用字体：{fallback_path}")
     try:
         fallback_name = get_font_name(fallback_path)
-        print(f"✨ 识别到中文备用字体：{fallback_name}")
+        print(f"识别到中文备用字体：{fallback_name}")
     except Exception as e:
         sys.exit(f"解析中文备用字体失败：{e}")
 
