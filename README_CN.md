@@ -10,7 +10,7 @@
 </div>
 
 ---
-
+来自中国大陆可能无法使用Github下载，所以我们还提供了夸克网盘：https://pan.quark.cn/s/2ca962008d7b <br>
 [English](./README.md) | [中文](./README_CN.md)  
 <br>  
 本安装程序内置默认英文字体和中文备用字体，您也可以指定任意自定义字体——一键替换游戏 UI 字体！<br>
