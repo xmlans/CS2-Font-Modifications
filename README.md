@@ -1,4 +1,4 @@
-# CS2 Font Modifications
+# CS2 Font Modifications / CS2自定义字体
 Custom software to modify CS2 global in-game fonts with built-in fonts.
 <div align="center">
   <img src="https://img.shields.io/badge/Platform-Windows-pink" alt="Platform Windows" />
