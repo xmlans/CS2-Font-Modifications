@@ -64,6 +64,22 @@ pip install fonttools
 python cs2change.py
 ```
 
+## 从源代码构建
+
+如果您想自己构建可执行文件：
+
+1. 安装依赖：
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. 运行构建脚本：
+   ```bash
+   python build_exe.py
+   ```
+
+详细构建说明请参阅 [BUILD.md](BUILD.md)
+
 ## v2.0 优化内容
 
 1. **面向对象架构**：重构代码为清晰的 `FontModifier` 类
