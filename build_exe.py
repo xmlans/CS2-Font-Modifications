@@ -113,7 +113,7 @@ def build_exe():
     cmd = [
         'pyinstaller',
         '--onefile',                    # Single executable
-        '--windowed',                   # No console window (use --console for debugging)
+        '--console',                    # Console window (required for input())
         '--name=cs2change',             # Output name
         '--icon=NONE',                  # No icon (you can add one later)
         '--clean',                      # Clean cache

@@ -49,7 +49,7 @@ If you prefer to build manually:
 
 2. Run PyInstaller:
    ```bash
-   pyinstaller --onefile --windowed --name=cs2change ^
+   pyinstaller --onefile --console --name=cs2change ^
        --add-data="cs2en.otf;." ^
        --add-data="cs2sc.ttf;." ^
        cs2change.py
@@ -61,17 +61,15 @@ If you prefer to build manually:
 
 ## Build Options
 
-### Console vs Windowed
+### Console Mode (Required)
 
-- **Windowed mode** (default): No console window, cleaner for end users
-  ```bash
-  --windowed
-  ```
+This program requires console mode because it uses `input()` for user interaction:
 
-- **Console mode**: Shows console for debugging
-  ```bash
-  --console
-  ```
+```bash
+--console
+```
+
+**Note:** Do NOT use `--windowed` mode, as it will cause the program to fail with `RuntimeError: input(): lost sys.stdin`. The program is interactive and needs a console window to function properly.
 
 ### Adding an Icon
 
