@@ -8,7 +8,8 @@ Custom software to modify CS2 global in-game fonts with built-in fonts.
 </div>
 
 ---
-if you live chinese mainland use quark url for download: https://pan.quark.cn/s/2ca962008d7b <br>
+if you live chinese mainland use quark url for download: https://pan.quark.cn/s/2ca962008d7b <br> 
+and if you didn't know how to use it, see the article: https://en.xmlans.com/cs2/cs2font/ <br>
 [English](./README.md) | [中文](./README_CN.md)
 <br>
 This installer comes bundled with a default English font and a Chinese fallback font. You can also specify any custom font you want—just one click and it replaces your game UI font instantly! <br>
